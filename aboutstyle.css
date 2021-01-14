@@ -1,0 +1,24 @@
+body{
+	background-color:#252525;
+}
+
+
+.bg {
+  background: url('https://i.imgur.com/NiYMuVc.jpg') no-repeat;
+  position: fixed;
+    background-position: top right;
+  width: 80%;
+  height: 400%;
+  top:0;
+  right:0;
+  z-index: -1;
+   margin-top: -350px;
+}
+section {
+  color: #fff;
+  font-family: arial;
+  margin: auto;
+  line-height: 20px;
+  font-size: 16px;
+
+}

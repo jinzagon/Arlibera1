@@ -1,0 +1,72 @@
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.scroll-animation {
+	position: absolute;
+    top: 50%;
+    right: 5%;
+		    display: none;  
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+
+}
+.wrapper .scroll-animation .mouse {
+  height: 45px;
+  width: 30px;
+  border-radius: 30px;
+  border: 2px solid white;
+  margin-bottom: 3px;
+  right:0;
+}
+.wrapper .scroll-animation .mouse .wheel {
+  animation: mouse-wheel 1.5s ease infinite;
+  height: 15px;
+  width: 6px;
+  background: white;
+  margin: 3px auto;
+  border-radius: 3px;
+}
+.wrapper .scroll-animation .arrows .first {
+  animation-delay: .1s;
+}
+.wrapper .scroll-animation .arrows .second {
+  animation-delay: .2s;
+}
+.wrapper .scroll-animation .arrows .third {
+  animation-delay: .3s;
+}
+.wrapper .scroll-animation .arrows span {
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  display: block;
+  margin: 0 auto;
+  animation: mouse-scroll 2s infinite;
+}

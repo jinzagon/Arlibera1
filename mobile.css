@@ -1,0 +1,55 @@
+@media screen and (max-width: 640px) {
+  .page-bg{
+  background-position: -700px;
+  }
+  #khdam{
+	  top: -90px;
+	  left: 80px;
+  }
+  #slide-up{
+	  bottom: 0;
+	  left: 0;
+  }
+  #desc{
+		bottom: 70px;
+		left: 90px;
+		text-shadow: 3px 4px #2d1c1d;
+		font-size: 25px;
+  }
+  #slide-up{
+		max-width: 600px;
+		max-height: 85%;
+  }
+  .navbar{
+	  visibility:hidden;
+  }
+  #titre{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 110px;
+  top: 60%;
+  left: 16%;
+  text-shadow: 5px 5px #2d1c1d;
+  }
+  #Layer1{
+		  position: absolute;
+	bottom: 30px;
+	margin-left: 26%;
+	opacity: 1;
+	background-blend-mode: multiply;
+	width: 83%;
+	height: 73%;
+  }
+  
+  
+  
+}
+@media screen and (max-width: 640px) {
+  #header{
+	  visibility:visible;
+  }
+}
